@@ -9,10 +9,10 @@ map("i", "jk", "<ESC>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
-map("n", "<A-up>", ":wincmd k<CR>")
-map("n", "<A-down>", ":wincmd j<CR>")
-map("n", "<A-left>", ":wincmd h<CR>")
-map("n", "<A-right>", ":wincmd l<CR>")
+map("n", "<A-up>", "<C-w>k")
+map("n", "<A-down>", "<C-w>j")
+map("n", "<A-left>", "<C-w>h")
+map("n", "<A-right>", "<C-w>l")
 
 for i = 1, 9, 1 do
   map("n", string.format("<A-%s>", i), function()
